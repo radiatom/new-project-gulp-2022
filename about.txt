@@ -1,0 +1,6 @@
+npm run dev //режим розробника
+npm run svgSprive //сворити svg іконки
+npm run build //створити проект 
+npm run zip //сворити zip файл проекту
+npm run deploy //загрузити проект на ftp server (донастроїти)
+
