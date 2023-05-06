@@ -3,12 +3,61 @@
 //<ADD NULL STULES>==========================================================================================================================
 
 //<FONST>=================================================================================================================================
-@import "fonts"; 
+@import "fonts";
 //100 - thin, 300 - lite/light, 400 - normal/regular, 500 - medium, 600 - semibold, 700 - bold, 800 - extrabolt, 900 - black
 //&display=swap&subset=cyrillic-ext
 
 //<FONST>=================================================================================================================================
+ 
+//default value===========================================================================================================================
+$max-width-content:1000px;
+$header-hight:60px;
+$header-background:aquamarine;
+$footer-hight:60px;
+$footer-background:aquamarine;
+//default value===========================================================================================================================
 
+
+
+.wrapper {
+  min-height: 100%; //default
+  overflow: hidden; //default
+
+  display: flex; //default
+  flex-direction: column; //default
+}
+.content {
+  flex: 1 1 auto; //default
+}
+.container {
+  max-width: $max-width-content; // content on page
+  margin: 0px auto; //default
+}
 
 body {
+}
+.header {
+  background: $header-background;
+  &__row {
+    height: $header-hight;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  &__item {
+    font-size: 20px;
+  }
+}
+.footer {
+  background: $footer-background;
+  &__row {
+    height: $footer-hight;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  &__item {
+    font-size: 30px;
+    font-weight: 700;
+  }
 }

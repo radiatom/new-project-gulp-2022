@@ -2,18 +2,25 @@
 <html lang="en">
   @@include('./html/head.html',{ "title":"Home" })
   <body>
-    @@include('./html/header.html',{})
-    <main>
-      <span
-        >Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellat
-        iusto alias corrupti sequi nam eveniet aperiam dolorem eius, a nesciunt
-        eum odio pariatur! Omnis nulla maxime, asperiores eum odio modi dolores.
-        Facere id iusto dignissimos cupiditate natus voluptas optio mollitia
-        maiores. Suscipit, reiciendis? Dignissimos soluta nihil dolorem
-        necessitatibus facilis veritatis.</span
-      >
-    </main>
-    @@include('./html/footer.html',{})
+    <div class="wrapper">
+      @@include('./html/header.html',{})
+      <div class="content">
+        <div class="text">
+          <div class="container">
+            <span
+              >Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+              Repellat iusto alias corrupti sequi nam eveniet aperiam dolorem
+              eius, a nesciunt eum odio pariatur! Omnis nulla maxime, asperiores
+              eum odio modi dolores. Facere id iusto dignissimos cupiditate
+              natus voluptas optio mollitia maiores. Suscipit, reiciendis?
+              Dignissimos soluta nihil dolorem necessitatibus facilis
+              veritatis.</span
+            >
+          </div>
+        </div>
+      </div>
+      @@include('./html/footer.html',{})
+    </div>
     <script src="js/app.min.js"></script>
   </body>
 </html>
